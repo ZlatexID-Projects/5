@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "browser-sync": "^2.26.12",
+    "gulp": "^4.0.2",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-jsmin": "^0.1.5",
+    "gulp-sass": "^4.1.0"
+  }
+}
