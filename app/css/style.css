@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  padding: 0; }
+
+#app {
+  display: flex;
+  flex-direction: column;
+  flex-grow: auto 1fr auto;
+  min-height: 100vh; }
+
+footer {
+  margin-top: auto;
+  height: 50px; }
+
+header {
+  padding-top: 41px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0; }
+  header .content {
+    height: 25px; }
+
+.content {
+  width: 1170px; }
