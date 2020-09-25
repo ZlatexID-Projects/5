@@ -3,22 +3,31 @@ var sass = require('gulp-sass');
 var browserSync = require('browser-sync').create();;
 const htmlmin = require('gulp-htmlmin');
 var jsmin = require('gulp-jsmin');
-
+var inject = require('gulp-inject');
+var rename = require("gulp-rename");
 var cssmin = require('gulp-cssmin');
 
 gulp.task('watch', function(){
   browserSync.init({
     server: "./app"
 });
+  
   gulp.watch('app/scss/*.scss', gulp.series('sass')); 
-  // gulp.watch('app/*.html', browserSync.reload()); 
-  gulp.watch("app/*.html").on('change', browserSync.reload);
+  gulp.watch("app/*_.html", gulp.series('html'));
 })
 
 gulp.task('sass', function(){
+  
   return gulp.src('app/scss/**/*.scss')
     .pipe(sass()) // Using gulp-sass
     .pipe(gulp.dest('app/css'))
+    .pipe(browserSync.stream())
+});
+gulp.task('html', function(){
+  return gulp.src('app/*_.html')
+    .pipe(rename("index.html"))
+    .pipe(inject(gulp.src(['./app/**/*.js','./app/**/*.css'], {read: false}), {relative: true}))
+    .pipe(gulp.dest('./app'))
     .pipe(browserSync.stream())
 });
 
@@ -42,5 +51,5 @@ gulp.task('htmlmin', function() {
     .pipe(gulp.dest('build/'));
 });
 
-gulp.task('default', gulp.series('watch'));
-gulp.task('deploy', gulp.series('htmlmin','cssmin' ,'jsmin'));
+gulp.task('default', gulp.series('html','watch'));
+gulp.task('deploy', gulp.series('cssmin' ,'jsmin','htmlmin'));
