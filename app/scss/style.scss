@@ -32,6 +32,30 @@ header{
         .logo{
             margin-left: -7px;
         }
+        menu .navbar{
+            margin-top: -5px;
+            padding-top: 0;
+            .nav-link{
+                padding-top: 0;
+                font-family: 'Source Sans Pro', sans-serif;
+                font-size: 16px;
+                font-weight: 600;
+                font-stretch: normal;
+                font-style: normal;
+                letter-spacing: normal;
+                text-align: right;
+                color: #fffefe;
+            }
+            .nav-item + .nav-item {
+                margin-left: 8px;
+            }
+            .active::after{
+                content: url('../imgs/underline.png');
+                position: relative;
+                top: -16px;
+                left: 7px;
+            }
+        }
     }
 }
 
@@ -42,7 +66,7 @@ header{
     #ftext{
         letter-spacing: 1.2px;
         margin-top: -8px;
-        font-family: Quicksand;
+        font-family: 'Quicksand', sans-serif;
         font-size: 24px;
         font-weight: bold;
         text-transform: uppercase;
@@ -54,7 +78,7 @@ header{
         opacity: 0.3;
         color: #ffffff;
          padding-left: 3px;
-        font-family: "Source Sans Pro";
+         font-family: 'Source Sans Pro', sans-serif;
         font-size: 9px;
         font-weight: 400;
         line-height: 10px;
