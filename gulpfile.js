@@ -6,6 +6,9 @@ var jsmin = require('gulp-jsmin');
 var inject = require('gulp-inject');
 var rename = require("gulp-rename");
 var cssmin = require('gulp-cssmin');
+var concat = require('gulp-concat');
+var concatCss = require('gulp-concat-css');
+const imagemin = require('gulp-imagemin');
 
 // check changes in files
 gulp.task('watch', function(){
@@ -39,6 +42,7 @@ gulp.task('cssmin', function () {
         .pipe(sass({
           'outputStyle': 'compressed'
         }).on('error', sass.logError))
+        .pipe(concatCss('style.css'))
         .pipe(cssmin())
         .pipe(gulp.dest('./build/css'));
 });
@@ -46,6 +50,7 @@ gulp.task('cssmin', function () {
 //js min
 gulp.task('jsmin', function () {
   return gulp.src('app/js/**/*.js')
+    .pipe(concat('bundle.js'))
       .pipe(jsmin())
       .pipe(gulp.dest('./build/js'));
 });
@@ -53,9 +58,16 @@ gulp.task('jsmin', function () {
 //html min
 gulp.task('htmlmin', function() {
   return gulp.src('app/index.html')
+    .pipe(inject(gulp.src(['./build/js/bundle.js','./build/css/style.css'], {read: false}), {relative: false,ignorePath:'build',addRootSlash:false}))
     .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest('build/'));
 });
 
+gulp.task('imgmin',function (){
+  return gulp.src('app/imgs/*')
+  .pipe(imagemin())
+  .pipe(gulp.dest('build/imgs'))
+})
+
 gulp.task('default', gulp.series('html','watch'));
-gulp.task('deploy', gulp.series('cssmin' ,'jsmin','htmlmin'));
+gulp.task('deploy', gulp.series('cssmin' ,'jsmin','htmlmin', 'imgmin'));
