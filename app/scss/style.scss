@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 
 body{
     margin: 0;
@@ -15,15 +16,22 @@ footer{
     height: 50px;
 }
 header{
-    padding-top: 41px;
-    width: 100%;
+    width: 100vw;
     position: absolute;
     top: 0;
+    background-image: url('../imgs/photo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+
     left: 0;
+    height: 640px;
     .content{
-        height: 25px;
+        padding-top: 41px;
+        width: 100%;
+        height: 100%;
     }
 }
+
 .content{
     width: 1170px;
 }
@@ -36,5 +44,19 @@ header{
         font-weight: bold;
         text-transform: uppercase;
         color: #ffffff;
+    }
+    #secondText{
+        width: 44px;
+        height: 16px;
+        opacity: 0.3;
+        color: #ffffff;
+         padding-left: 3px;
+        font-family: "Source Sans Pro";
+        font-size: 9px;
+        font-weight: 400;
+        line-height: 10px;
+        text-transform: uppercase;
+        /* Text style for "onepage ," */
+        letter-spacing: 1.26px;
     }
 }
