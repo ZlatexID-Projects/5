@@ -6,3 +6,4 @@ app/*
 !app/scss
 !app/imgs
 !app/js
+app/js/anim.js
