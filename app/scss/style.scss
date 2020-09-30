@@ -1,10 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
 
 body{
     margin: 0;
     font-family: 'Source Sans Pro', sans-serif;
     padding: 0;
+    h2,h1,h3,h4,h5,h6,p{
+        color: white;
+    }
 }
 #app{
     display: flex;
@@ -15,6 +18,18 @@ body{
 footer{
     margin-top: auto;
     height: 50px;
+}
+.classic-btn{
+    width: 160px;
+    height: 50px;
+    box-shadow: 0 0 3px rgba(3, 3, 3, 0.1);
+    color: #ffffff !important;
+    font-family: 'Source Sans Pro', sans-serif;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    font-size: 14px !important;
+    font-weight: 700 !important;
+    line-height: 36px !important;
+    text-transform: uppercase;
 }
 header{
     width: 100vw;
@@ -42,6 +57,30 @@ header{
                     letter-spacing: 1.6px;
                     line-height: 20px;
                     text-transform: uppercase;
+                }
+                h2{
+                    margin-top: 19px;
+                    font-family: "Source Sans Pro", sans-serif;
+                    font-size: 48px;
+                    font-weight: 600;
+                    line-height: 48px;
+                    margin-bottom: 25px;
+                }
+                .textHeader{
+                    color: #999999;
+                    font-family: "Source Sans Pro", sans-serif;
+                    font-weight: 400;
+                    line-height: 26px;
+                    font-size: 18px;
+                }
+                .btns {
+                    margin-top: 58px;
+                    margin-left: 0;
+                    height: auto;
+                    .btn:first-child
+                    {
+                        margin-right: 20px;
+                    }
                 }
             }
         }
