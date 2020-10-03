@@ -325,6 +325,72 @@ main {
   background-size: cover;
   background-repeat: no-repeat;
   height: 640px;
+  padding-top: 60px;
+  .tipa-content{
+    .smallText{
+        font-size: 17px;
+    }
+    h2{
+        color: white;
+        font-family: "Source Sans Pro";
+        font-size: 36px;
+        margin: 5px 0;
+        font-weight: 600;
+    }
+    .lines{
+        margin-top: 23px;
+    }
+    margin-bottom: 60px;
+  }
+  .swiper-container {
+    width: 100%;
+    height: calc(100% - 210px);
+    .swiper-pagination-bullet{
+      background-color: white;
+    }
+    .swiper-pagination-bullet-active{
+      // padding: 7px;
+    }
+    .swiper-wrapper{
+      padding-top: 26px !important;
+      padding-right: 20px;
+      .swiper-slide{
+        max-width: 550px;
+        margin-top: 0 !important;
+        .slideText{
+          color: #ffffff;
+          letter-spacing: 0.3px;
+          font-family: "Source Sans Pro";
+          font-size: 24px;
+          font-weight: 300;
+          line-height: 32px;
+          font-style: italic;
+        }
+        .slideAuthor{
+          margin-top: 25px;
+          margin-left: 17px;
+          color: white;
+          .who{
+            padding-top: 3px;
+            margin-left: 23px;
+            .name{
+              font-family: "Source Sans Pro";
+              font-size: 16px;
+              font-weight: 400;
+            }
+            .profecion{
+              font-family: "Source Sans Pro";
+              font-size: 14px;
+              font-weight: 700;
+              line-height: 2.2;
+            }
+          }
+        }
+      }
+      
+    }
+    
+  }
 }
 .likeGet {
   background-color: #15141a;
@@ -470,6 +536,7 @@ main {
         }
     }
 }
+
 .contact{
     position: relative;
     padding-top: 55px;
@@ -593,3 +660,4 @@ footer{
         text-transform: uppercase;
     }
 }
+
