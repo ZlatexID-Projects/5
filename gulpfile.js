@@ -69,5 +69,5 @@ gulp.task('imgmin',function (){
   .pipe(gulp.dest('build/imgs'))
 })
 
-gulp.task('default', gulp.series('html','watch'));
+gulp.task('default', gulp.series('sass','html','watch'));
 gulp.task('deploy', gulp.series('cssmin' ,'jsmin','htmlmin', 'imgmin'));

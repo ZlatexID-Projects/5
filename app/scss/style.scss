@@ -33,7 +33,7 @@ footer{
 }
 header{
     width: 100vw;
-    position: absolute;
+    // position: absolute;
     top: 0;
     background-image: url('../imgs/photo.png');
     background-size: cover;
@@ -83,6 +83,13 @@ header{
                     }
                 }
             }
+            .secondBlock{
+                img{
+                    position: absolute;
+                    bottom: 0;
+                    left: -12px;                
+                }
+            }
         }
     }
     .content{
@@ -109,7 +116,7 @@ header{
                     color: #fffefe;
                 }
                 .nav-item + .nav-item {
-                    margin-left: 8px;
+                    margin-left: 6px;
                 }
                 .active::after{
                     content: url('../imgs/underline.png');
@@ -157,4 +164,149 @@ header{
 
     padding: 0 !important;
 
+}
+.smallText{
+    font-size: 16px;
+    font-family: "Source Sans Pro", sans-serif;
+    color: #008ed6;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+main { 
+    .amazingF{
+        padding-top: 57px !important;
+        .title{
+            .bigText{
+                color: #1a1a1a;
+                font-family: "Source Sans Pro", sans-serif;
+                line-height: 1.6;
+                font-size: 37px;
+            }
+
+        }
+    }
+    .features{
+        margin-top: 75px;
+        .fElements{
+            .image{
+                width: 88px;
+                height: 88px;
+                border: 1px solid #e0e0e0;
+                border-radius: 50%;
+                margin-bottom: 12px;
+                background-color: #ffffff;
+                i{
+
+                    color: #008ed6;
+                }
+            }
+            .title{
+                font-size: 23px;
+                margin: 16px 0px;
+                color: #1a1a1a;
+
+            }
+            .text{
+                padding: 0 10px;
+                line-height: 1.45;
+                color: #999999;
+                font-family: "Source Sans Pro";
+                font-size: 18px;
+                font-weight: 400;
+            }
+
+        }
+    }
+    .BeauOnEveryD{
+        padding-top: 135px !important;
+        .device{    
+            margin-left: 5px;
+            margin-top: 2px;
+            padding-left: 30px;
+        }
+        .info{
+            padding: 0;
+            padding-left: 10px;
+            padding-top: 48px;
+            .smallText{
+                letter-spacing: 0.4px;
+            }
+            h2{
+                color: #1a1a1a;
+                font-family: "Source Sans Pro";
+                font-size: 36px;
+                margin: 6px 0;
+                font-weight: 600;
+            }
+            .lines{
+                margin: 26px 0;
+            }
+            .text{
+                width: 470px;
+                line-height: 1.5;
+                color: #999999;
+                font-family: "Source Sans Pro";
+                font-size: 18px;
+                font-weight: 400;
+            }
+            .feaut{
+                margin-top: 30px;
+                .featureElInList{
+                    padding-left: 15px;
+                    margin-bottom: 15px;
+                    i{color: #008ed6;}
+                    .iconText{
+                        line-height: 1.2;
+                        margin-left: 8px;
+                        font-size: 18px;
+                        font-family: "Source Sans Pro";
+                    }
+                }
+            }
+        }
+    }
+}
+.lines{
+    width: 42px;
+    margin: 0 auto;
+    margin-top: 26px;
+    height: 2px;
+    background-image: url("../imgs/underline.png");
+}
+.easyToCutsomize{
+    margin-top: 18px;
+    background-color: #f2f2f2;
+    padding-top: 126px;
+    padding-bottom: 159px;
+    .info{
+        .smallText{
+            font-size: 14px;
+            margin-top: 2px;
+            letter-spacing: 1.4px;
+        }
+        h2{
+            color: #1a1a1a;
+            font-family: "Source Sans Pro";
+            font-size: 36px;
+            margin: 8px 0;
+            font-weight: 600;
+        }
+        .lines{
+            margin: 28px 0 23px 0;
+        }
+        .text{
+            width: 470px;
+            line-height: 1.5;
+            color: #999999;
+            font-family: "Source Sans Pro";
+            font-size: 18px;
+            font-weight: 400;
+        }
+
+    }
+    .image img{
+        position: absolute;
+        top: -92px;
+        left: -14px;
+    }
 }
