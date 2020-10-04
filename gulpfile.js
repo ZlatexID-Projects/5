@@ -7,7 +7,7 @@ var inject = require('gulp-inject');
 var rename = require("gulp-rename");
 var cssmin = require('gulp-cssmin');
 var concat = require('gulp-concat');
-var concatCss = require('gulp-concat-css');
+// var concatCss = require('gulp-concat-css');
 const imagemin = require('gulp-imagemin');
 
 // check changes in files
@@ -36,14 +36,13 @@ gulp.task('html', function(){
     .pipe(gulp.dest('./app'))
     .pipe(browserSync.stream())
 });
-
 //css min
 gulp.task('cssmin', function () {
-    return gulp.src('app/scss/**/*.scss')
+    return  gulp.src('app/scss/*.scss')
         .pipe(sass({
-          'outputStyle': 'compressed'
-        }).on('error', sass.logError))
-        .pipe(concatCss('style.css'))
+            errLogToConsole: true
+        }))
+        .pipe(concat('style.css'))
         .pipe(cssmin())
         .pipe(gulp.dest('./build/css'));
 });
@@ -58,9 +57,10 @@ gulp.task('jsmin', function () {
 
 //html min
 gulp.task('htmlmin', function() {
-  return gulp.src('app/index.html')
+  return gulp.src('app/index_.html')
     .pipe(inject(gulp.src(['./build/js/bundle.js','./build/css/style.css'], {read: false}), {relative: false,ignorePath:'build',addRootSlash:false}))
     .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(rename('index.html'))
     .pipe(gulp.dest('build/'));
 });
 
