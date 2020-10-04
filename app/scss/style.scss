@@ -580,7 +580,7 @@ main {
         padding-top: 71px;
         .form{
             padding: 40px 0;
-            width: 770px;
+            max-width: 770px;
             height: 100%;
             margin: auto;
             background-color: #15141a;
@@ -661,3 +661,282 @@ footer{
     }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//media
+
+@media screen and (max-width: 1200px){
+  header .infoBlock{
+    .firstblock, .secondBlock{
+      max-height: 560px;
+    }
+  }
+  .easyToCutsomize{
+    .image img{
+      top: -38px;
+      left: 76px;
+    }
+  }
+  .likeGet .container .row {
+    .text{
+      flex-direction: column !important;
+    } 
+    .buttons{
+      .btn{
+        position: static !important;
+        margin: 0 !important;
+        margin: 5px 0 !important;
+        float: right;
+      }
+    }
+  }
+  .contact{
+    text-align: center;
+    p{
+      margin-bottom: 10px !important;
+    }
+  }
+  .reviews{
+    .slideText{
+      max-width: 400px!important;
+    }
+  }
+}
+
+@media screen and (max-width: 990px){
+  header{
+     .infoBlock{
+        .secondBlock img{
+          display: none;
+        }
+      }
+      menu {
+        margin-left: 0 !important;
+
+      }
+    .navbar{
+        .navbar-toggler{
+          position: absolute;
+          top: -28px;
+          right: 0;
+        }
+        .navbar-nav{
+          .active::after{
+            display: none;
+          }
+        }
+        .navbar-collapse {
+          width: 100%;
+          z-index: 10;
+          .navbar-nav {
+            display: flex !important;
+            justify-content: center !important;
+            align-items: center !important;
+            background-color: #008fd6;
+            
+          }
+          
+          
+        }
+    }
+  }
+  .amazingF {
+     .fElements{
+        padding: 0 170px;
+     }
+     .fElements + .fElements{
+       margin-top: 50px;
+     }
+     .BeauOnEveryD{
+       .device{display: none;}
+       .info{
+        text-align: center;
+        .lines{
+          margin: 26px auto;
+        }
+        .text{
+          width: 100%;
+          padding: 0 80px;
+        }
+        .feaut{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+       }
+     }
+  }
+  .easyToCutsomize{
+    .image{
+      display: none;
+    }
+    .info{
+      text-align: center;
+    }
+    .lines{
+      margin: 28px auto 23px auto !important;
+    }
+    .text{
+      width: 100% !important;
+      padding: 0 80px;
+    }
+  }
+  .reviews{
+    .swiper-slide{
+      max-width: 300px !important;
+    }
+  }
+  .likeGet{
+    .container .row{
+      .text{
+        margin-bottom: 30px;
+      }
+      .buttons{
+        margin-left: 0;
+        #fBtn{
+          float: left;
+        }
+      }
+    }
+  }
+  .buyContainer{
+    padding: 0 150px;
+    margin-bottom: 10px;
+  }
+  .contactBlock{
+    margin-left: 0 !important;
+    margin-top: 20px;
+  }
+  .contactForm .form {
+    padding: 0 !important;
+  .container .row{
+    .col-lg-3{
+      input{
+        margin-right: 10px;
+        float: left;
+      }
+    }
+    .col-lg-5{
+      textarea{
+        float: right;
+        margin-right: 62px;
+        position: relative;
+        top: -70px;
+        max-width: 300px;
+      }
+      .btn{
+        left: 80px;
+bottom: 95px;
+      }
+    }
+  }
+
+  }
+}
+@media screen and (max-width: 768px){
+  .reviews{
+    .swiper-slide{
+      max-width: 767px !important;
+      .slideText{
+        max-width: 600px !important;
+      }
+    }
+  }
+  .buyContainer{
+    padding: 0 100px;
+  }
+  .contact{
+    padding-bottom: 0;
+    .contactForm{
+      position: static;
+      height: auto;
+      .form .container .row{
+        .col-lg-3{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        .col-lg-5{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          textarea{
+            float: unset;
+            position: static;
+            max-width: 300px;
+            margin-right: 10px;
+          }
+          .btn{
+            position: static !important;
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width:576px){
+  .container{
+    padding: 0 20px !important;
+  }
+}
+
+@media screen and (max-width:546px){
+  .amazingF .fElements{
+    padding: 0 100px;
+  }
+}
+@media screen and (max-width:500px){
+  .buyContainer {
+    padding: 0 50px;
+  }
+}
+@media screen and (max-width:406px){
+  .amazingF .fElements{
+    padding: 0 50px;
+  }
+  .buyContainer {
+    padding: 0;
+  }
+  .easyToCutsomize, .amazingF{
+    .text{
+      padding: 0 !important;
+    }
+  }
+}
+@media screen and (max-width:480px){
+  header .container .row .firstblock h2{
+    font-size: 33px;
+  }
+}
+@media screen and (max-width:365px){
+  .classic-btn{
+    width: 135px;
+  }
+  .likeGet{
+    .text{
+      font-size: 30px !important;
+    }
+    .buttons{
+      .btn{
+        float: none !important;
+      }
+      #fBtn{
+        float: none !important;
+      }
+    }
+  }
+}
