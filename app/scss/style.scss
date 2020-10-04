@@ -1,9 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
 
+
+@import './var';
+
+
 body {
   margin: 0;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: $font, sans-serif;
   padding: 0;
   h2,
   h1,
@@ -12,7 +16,7 @@ body {
   h5,
   h6,
   p {
-    color: white;
+    color: $w;
   }
 }
 #app {
@@ -30,8 +34,8 @@ footer {
   width: 160px;
   height: 50px;
   box-shadow: 0 0 3px rgba(3, 3, 3, 0.1);
-  color: #ffffff !important;
-  font-family: "Source Sans Pro", sans-serif;
+  color: $w !important;
+  font-family: $font, sans-serif;
   border: 1px solid rgba(255, 255, 255, 0.2) !important;
   font-size: 14px !important;
   font-weight: 700 !important;
@@ -58,7 +62,7 @@ header {
       .firstblock {
         padding: 77px 8px;
         h6 {
-          color: #008ed6;
+          color: $color2;
           font-size: 12px;
           font-weight: 700;
           letter-spacing: 1.6px;
@@ -67,15 +71,15 @@ header {
         }
         h2 {
           margin-top: 19px;
-          font-family: "Source Sans Pro", sans-serif;
+          font-family: $font, sans-serif;
           font-size: 48px;
           font-weight: 600;
           line-height: 48px;
           margin-bottom: 25px;
         }
         .textHeader {
-          color: #999999;
-          font-family: "Source Sans Pro", sans-serif;
+          color: $color3;
+          font-family: $font, sans-serif;
           font-weight: 400;
           line-height: 26px;
           font-size: 18px;
@@ -112,14 +116,14 @@ header {
         padding-top: 0;
         .nav-link {
           padding-top: 0;
-          font-family: "Source Sans Pro", sans-serif;
+          font-family: $font, sans-serif;
           font-size: 16px;
           font-weight: 600;
           font-stretch: normal;
           font-style: normal;
           letter-spacing: normal;
           text-align: right;
-          color: #fffefe;
+          color: $w;
         }
         .nav-item + .nav-item {
           margin-left: 6px;
@@ -146,13 +150,13 @@ header {
     font-size: 24px;
     font-weight: bold;
     text-transform: uppercase;
-    color: #ffffff;
+    color: $w;
   }
   #secondText {
     width: 44px;
     height: 16px;
     opacity: 0.3;
-    color: #ffffff;
+    color: $w;
     padding-left: 3px;
     font-size: 9px;
     font-weight: 400;
@@ -180,8 +184,8 @@ header {
 }
 .smallText {
   font-size: 16px;
-  font-family: "Source Sans Pro", sans-serif;
-  color: #008ed6;
+  font-family: $font, sans-serif;
+  color: $color2;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -191,7 +195,7 @@ main {
     .title {
       .bigText {
         color: #1a1a1a;
-        font-family: "Source Sans Pro", sans-serif;
+        font-family: $font, sans-serif;
         line-height: 1.6;
         font-size: 37px;
       }
@@ -203,12 +207,12 @@ main {
       .image {
         width: 88px;
         height: 88px;
-        border: 1px solid #e0e0e0;
+        border: 1px solid$color4;
         border-radius: 50%;
         margin-bottom: 12px;
-        background-color: #ffffff;
+        background-color: $w;
         i {
-          color: #008ed6;
+          color: $color2;
         }
       }
       .title {
@@ -219,8 +223,8 @@ main {
       .text {
         padding: 0 10px;
         line-height: 1.45;
-        color: #999999;
-        font-family: "Source Sans Pro";
+        color: $color3;
+        font-family: $font;
         font-size: 18px;
         font-weight: 400;
       }
@@ -242,7 +246,7 @@ main {
       }
       h2 {
         color: #1a1a1a;
-        font-family: "Source Sans Pro";
+        font-family: $font;
         font-size: 36px;
         margin: 6px 0;
         font-weight: 600;
@@ -253,8 +257,8 @@ main {
       .text {
         width: 470px;
         line-height: 1.5;
-        color: #999999;
-        font-family: "Source Sans Pro";
+        color: $color3;
+        font-family: $font;
         font-size: 18px;
         font-weight: 400;
       }
@@ -264,13 +268,13 @@ main {
           padding-left: 15px;
           margin-bottom: 15px;
           i {
-            color: #008ed6;
+            color: $color2;
           }
           .iconText {
             line-height: 1.2;
             margin-left: 8px;
             font-size: 18px;
-            font-family: "Source Sans Pro";
+            font-family: $font;
           }
         }
       }
@@ -297,7 +301,7 @@ main {
     }
     h2 {
       color: #1a1a1a;
-      font-family: "Source Sans Pro";
+      font-family: $font;
       font-size: 36px;
       margin: 8px 0;
       font-weight: 600;
@@ -308,8 +312,8 @@ main {
     .text {
       width: 470px;
       line-height: 1.5;
-      color: #999999;
-      font-family: "Source Sans Pro";
+      color: $color3;
+      font-family: $font;
       font-size: 18px;
       font-weight: 400;
     }
@@ -331,8 +335,8 @@ main {
         font-size: 17px;
     }
     h2{
-        color: white;
-        font-family: "Source Sans Pro";
+        color: $w;
+        font-family: $font;
         font-size: 36px;
         margin: 5px 0;
         font-weight: 600;
@@ -346,7 +350,7 @@ main {
     width: 100%;
     height: calc(100% - 210px);
     .swiper-pagination-bullet{
-      background-color: white;
+      background-color: $w;
     }
     .swiper-pagination-bullet-active{
       // padding: 7px;
@@ -358,9 +362,9 @@ main {
         max-width: 550px;
         margin-top: 0 !important;
         .slideText{
-          color: #ffffff;
+          color: $w;
           letter-spacing: 0.3px;
-          font-family: "Source Sans Pro";
+          font-family: $font;
           font-size: 24px;
           font-weight: 300;
           line-height: 32px;
@@ -369,17 +373,17 @@ main {
         .slideAuthor{
           margin-top: 25px;
           margin-left: 17px;
-          color: white;
+          color: $w;
           .who{
             padding-top: 3px;
             margin-left: 23px;
             .name{
-              font-family: "Source Sans Pro";
+              font-family: $font;
               font-size: 16px;
               font-weight: 400;
             }
             .profecion{
-              font-family: "Source Sans Pro";
+              font-family: $font;
               font-size: 14px;
               font-weight: 700;
               line-height: 2.2;
@@ -397,8 +401,8 @@ main {
   padding: 58px 0;
   .container .row {
     .text {
-      color: #ffffff;
-      font-family: "Source Sans Pro";
+      color: $w;
+      font-family: $font;
       font-size: 36px;
       font-weight: 300;
       .b {
@@ -428,7 +432,7 @@ main {
         }
         h2{
             color: #1a1a1a;
-            font-family: "Source Sans Pro";
+            font-family: $font;
             font-size: 36px;
             margin: 5px 0;
             font-weight: 600;
@@ -442,10 +446,10 @@ main {
 .buyContainer{
     .title{
         height: 70px;
-        border: 1px solid #e0e0e0;
+        border: 1px solid$color4;
         h2{
             color: #1a1a1a;
-            font-family: "Source Sans Pro";
+            font-family: $font;
             font-size: 24px;
             font-weight: 700;
             text-transform: uppercase;
@@ -454,14 +458,14 @@ main {
         }
     }
     .price{
-        border: 1px solid #e0e0e0;
+        border: 1px solid$color4;
         border-top-width: 0px;
         border-bottom-width: 0px;
         height: 150px;
         .priceNum{
 
             color: #1a1a1a;
-            font-family: "Source Sans Pro";
+            font-family: $font;
             font-size: 60px;
             font-weight: 600;
         }
@@ -473,65 +477,65 @@ main {
             left: -1px;
         }
         .perM{
-            font-family: "Source Sans Pro";
+            font-family: $font;
             font-weight: 400;
             line-height: 28px;
-            color: #999999;
+            color: $color3;
             position: relative;
             bottom: 15px;
             font-size: 18px;
         }
     }
     .info{
-        border: 1px solid #e0e0e0;
+        border: 1px solid$color4;
         border-top-width: 0px;
         border-bottom-width: 0px;
-        color: #999999;
-        font-family: "Source Sans Pro";
+        color: $color3;
+        font-family: $font;
         font-size: 18px;
         font-weight: 400;
         line-height: 27px;
         text-align: center;
         padding: 48px 30px 0 30px;
         .link{
-            color: #008ed6;
+            color: $color2;
             cursor: pointer;
         }
     }
     .button{
         padding-top: 40px;
-        border: 1px solid #e0e0e0;
+        border: 1px solid$color4;
         border-top-width: 0px;
         padding-bottom: 30px;
         .btn{
             color:#008ed6 !important;
-            border: 1px solid #e0e0e0 !important;
+            border: 1px solid$color4 !important;
         }
         .btn:hover{
-            color: #fff !important;
+            color: $w !important;
         }
     }
     
 }
 .buyRecomendate{
     .title h2{
-        color: #008ed6;
+        color: $color2;
     }
     .price{
-        background-color: #008ed6;
+        background-color: $color2;
         .priceNum, .perM{
-            color: white;
+            color: $w;
         }
     }
     .button{
         .btn{
-            color:white !important;
-            border: 1px solid #e0e0e0 !important;
+            color:$w !important;
+            border: 1px solid$color4 !important;
             background: #008ed6 !important;
         }
         .btn:hover{
             color:#008ed6 !important;
-            background: white !important;
+            background: $w !important;
 
         }
     }
@@ -548,7 +552,7 @@ main {
         }
         h2{
             color: #1a1a1a;
-            font-family: "Source Sans Pro";
+            font-family: $font;
             font-size: 36px;
             margin: 5px 0;
             font-weight: 600;
@@ -561,11 +565,11 @@ main {
     .container .row{
         .contactBlock{
             .icon {
-                 i{color: #008ed6;margin-bottom: 27px;}
+                 i{color: $color2;margin-bottom: 27px;}
             }
             p{
-                color: #999999;
-                font-family: "Source Sans Pro";
+                color: $color3;
+                font-family: $font;
                 font-size: 18px;
                 font-weight: 400;
                 line-height: 26px;
@@ -590,19 +594,19 @@ main {
                     width: 300px;
                     height: 50px;
                     border: 1px solid rgba(255, 255, 255, 0.2);
-                    background-color: #008ed6;
+                    background-color: $color2;
                     padding: 15px;
                     border-radius: 5px;
-                    color: #ffffff;
-                    font-family: "Source Sans Pro";
+                    color: $w;
+                    font-family: $font;
                     font-size: 14px;
                     margin-bottom: 20px;
                     font-weight: 700;
                     outline: none;
                 }
                 textarea::placeholder, input::placeholder{
-                    color: #fff;
-                    font-family: "Source Sans Pro";
+                    color: $w;
+                    font-family: $font;
                     font-size: 14px;
                     font-weight: 700;
                 }
@@ -611,11 +615,11 @@ main {
                     textarea{
                         resize: none;
                         border: 1px solid rgba(255, 255, 255, 0.2);
-                        background-color: #008ed6;
+                        background-color: $color2;
                         padding: 15px;
                         border-radius: 5px;
-                        color: #ffffff;
-                        font-family: "Source Sans Pro";
+                        color: $w;
+                        font-family: $font;
                         font-size: 14px;
                         margin-bottom: 20px;
                         font-weight: 700;
@@ -638,14 +642,14 @@ footer{
     margin-top: -6px;
     .socialLink{
         i{
-            color: white;
+            color: $w;
             transition: all 0.3s;
         }
         
     }
     .socialLink:hover{
         i{
-            color: #008ed6;
+            color: $color2;
         }
     }
     .socialLink + .socialLink{
@@ -653,7 +657,7 @@ footer{
     }
     .copyright{
         color: #444348;
-        font-family: "Source Sans Pro";
+        font-family: $font;
         font-size: 14px;
         font-weight: 400;
         line-height: 48px;
@@ -745,7 +749,7 @@ footer{
             display: flex !important;
             justify-content: center !important;
             align-items: center !important;
-            background-color: #008fd6;
+            background-color: $color1
             
           }
           
