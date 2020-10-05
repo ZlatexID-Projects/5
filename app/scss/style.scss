@@ -249,7 +249,7 @@ main {
         font-weight: 600;
       }
       .lines {
-        margin: 26px 0;
+        margin: 24px 0;
       }
       .text {
         width: 470px;
@@ -289,7 +289,7 @@ main {
   margin-top: 18px;
   background-color: #f2f2f2;
   padding-top: 126px;
-  padding-bottom: 153px;
+  padding-bottom: 161px;
   .info {
     .smallText {
       font-size: 14px;
@@ -304,11 +304,11 @@ main {
       font-weight: 600;
     }
     .lines {
-      margin: 28px 0 23px 0;
+      margin: 25px 0 23px 0;
     }
     .text {
       width: 470px;
-      line-height: 1.5;
+      line-height: 1.45;
       color: $color3;
       font-family: $font;
       font-size: 18px;
@@ -727,6 +727,8 @@ footer{
 
       }
     .navbar{
+      padding-left: 574px;
+      padding-right: 0;
         .navbar-toggler{
           position: absolute;
           top: -28px;
@@ -740,11 +742,14 @@ footer{
         .navbar-collapse {
           width: 100%;
           z-index: 10;
+          padding-top: 12px;
           .navbar-nav {
             display: flex !important;
             justify-content: center !important;
             align-items: center !important;
-            background-color: $color1
+            background-color: black;
+            border-radius: 7px;
+            
             
           }
           
@@ -796,6 +801,7 @@ footer{
   .reviews{
     .swiper-slide{
       max-width: 300px !important;
+      padding: 0 30px;
     }
   }
   .likeGet{
@@ -846,6 +852,11 @@ bottom: 95px;
   }
 }
 @media screen and (max-width: 768px){
+  header{
+    .navbar{
+      padding-left: 400px;
+    }
+  }
   .reviews{
     .swiper-slide{
       max-width: 767px !important;
@@ -894,16 +905,31 @@ bottom: 95px;
 }
 
 @media screen and (max-width:546px){
+  header{
+    .navbar{
+      padding-left: 350px;
+    }
+  }
   .amazingF .fElements{
     padding: 0 100px;
   }
 }
 @media screen and (max-width:500px){
+  header{
+    .navbar{
+      padding-left: 300px;
+    }
+  }
   .buyContainer {
     padding: 0 50px;
   }
 }
 @media screen and (max-width:406px){
+  header{
+    .navbar{
+      padding-left: 200px;
+    }
+  }
   .amazingF .fElements{
     padding: 0 50px;
   }
@@ -917,11 +943,25 @@ bottom: 95px;
   }
 }
 @media screen and (max-width:480px){
+  header{
+    .navbar{
+      padding-left: 250px;
+    }
+  }
   header .container .row .firstblock h2{
     font-size: 33px;
   }
 }
+
+@media screen and (max-width:390px){
+  header{
+    .navbar{
+      padding-left: 150px;
+    }
+  }
+}
 @media screen and (max-width:365px){
+  
   .classic-btn{
     width: 135px;
   }

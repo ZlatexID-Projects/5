@@ -2,6 +2,7 @@
     cssMode: false,
     slidesPerView: 1,
     spaceBetween: 10,
+    updateOnWindowResize: true,
     centeredSlides: true,
     pagination: {
       el: '.swiper-pagination',
