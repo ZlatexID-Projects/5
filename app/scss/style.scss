@@ -683,6 +683,9 @@ footer{
       max-height: 560px;
     }
   }
+  header .navbar-collapse{
+    margin-left: -82px;
+  }
   .easyToCutsomize{
     .image img{
       top: -38px;
@@ -717,6 +720,9 @@ footer{
 
 @media screen and (max-width: 990px){
   header{
+    .navbar-collapse{
+      margin-left: 0;
+    }
      .infoBlock{
         .secondBlock img{
           display: none;
@@ -851,7 +857,7 @@ bottom: 95px;
 
   }
 }
-@media screen and (max-width: 768px){
+@media screen and (max-width: 767px){
   header{
     .navbar{
       padding-left: 400px;
