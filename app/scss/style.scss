@@ -125,11 +125,10 @@ header {
         .nav-item + .nav-item {
           margin-left: 7px;
         }
-        .active::after {
+        .nav-item:hover:after {
           content: url("../imgs/underline.png");
+          bottom: 15px;
           position: relative;
-          top: -16px;
-          left: 7px;
         }
       }
     }
